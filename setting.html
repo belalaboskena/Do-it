@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name ="descrption"  content="its my new project">
+<title>setting</title>
+<script src="main.js" defer></script>
+<link class="theme-link" rel="stylesheet" href="css/ToDo.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="Light">
+    <i class="fa-solid fa-bars options"></i>
+    <div class="shadow"></div>
+<div class="container">
+    <div class="sidebar">
+        <div class="user">
+        <img class="userimg" src="img/nouser.png" alt="">
+        <div class="text">
+            <h2>Do-it</h2>
+            <p class="username">Name</p>
+        </div>
+        </div>
+
+        <div class="sidebarlist">
+        <ul>
+
+            <li>
+            <div class="todaytasks sidebarbtn">
+                <a href="index.html">
+                <i class="fa-solid fa-list-check"></i>
+                <p>Today tasks</p>
+                </a>
+                <ul>
+                    <li>
+                        <div class="liststyle one"></div>
+                        <p class="Personal">personal</p>
+                    </li>
+                    <li>
+                        <div class="liststyle two"></div>
+                        <p class="Freelance">Freelance</p>
+                    </li>
+                    <li>
+                        <div class="liststyle three"></div>
+                        <p class="Work">Work</p>
+                    </li>
+                    <li>
+                        <div class="liststyle four"></div>
+                        <p class="Normal">Normal</p>
+                    </li>
+                </ul>
+            </div>
+            </li>
+
+            <li>
+            <div class="scheduledtasks sidebarbtn">
+                <a href="Scheduledtasks.html">
+                <i class="fa-regular fa-calendar "></i>
+                <p>Scheduled tasks</p>
+                </a>
+            </div>
+            </li>
+
+            <li>
+            <div class="Settings sidebarbtn">
+                <a href="setting.html">
+                <i class="fa-solid fa-gear active"></i>
+                <p>Settings</p>
+                </a>
+            </div>
+            </li>
+
+        </ul>
+        </div>
+        
+        
+    </div>
+
+    <div class=" settingscontent">
+        
+        <div class="settings">
+            <ul class="mainul">
+                <li>
+                    <div class="head first">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Profile</p>  
+                    </div>
+                    <ul class="profile">
+
+                        <div class="left">
+                            <div class="label photo">
+                                <input class="photo1" type="file" accept="img" id="img-input">
+                                <label for="img-input">
+                                    <img class="userimg2" src="img/nouser.png" alt="">
+                                    <div class="hover"></div>
+                                    <i class="fa-solid fa-camera"></i>
+                                </label>
+                                <p>Change photo</p>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="label name">
+                                <p>Change name</p>
+                                <input class="name1" name="name" type="text" maxlength="15" value="Name">
+                            </div>
+                            <div class="label email">
+                                <p>Change email</p>
+                                <input class="email1" type="email" value="youremail8@gmail.com">
+                            </div>
+                            <div class="label password">
+                                <p>Change password</p>
+                                <div class="passlabel">
+                                    <input class="password1" type="password" value="0123456789">
+                                    <button class="change">Save</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </li>
+                <li>
+                    <div class="head second">
+                        <i class="fa-solid fa-display"></i>
+                        <p>Display</p>
+                    </div>
+                    <div class="display">
+                        <label>
+                            <input class="Orignal" type="radio" value="Orignal" name="option" >
+                            <img class="Orignal" src="img/orignal mode.png" alt="">
+                            <p>Orignal</p>
+                        </label>
+                        <label>
+                            <input class="Light" type="radio" value="Light" name="option">
+                            <img class="Light" src="img/light mode.png" alt="">
+                            <p>Light</p>
+                        </label>
+                        <label>
+                            <input class="Dark" type="radio" value="Dark" name="option">
+                            <img class="Dark" src="img/dark mode.png" alt="">
+                            <p>Dark</p>
+                        </label>                        
+                    </div>
+                </li>
+                <li>
+                    <div class="head third">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Language</p>
+                    </div>
+                    <div class="language">
+                        <label>
+                            <input type="radio" value = "en" name="lang">
+                            <p>English</p>
+                        </label>
+                        <label>
+                            <input type="radio" value = "ar" name="lang">
+                            <P>العربيه</P>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="redball decoration1"></div>
+    <div class="yellowball decoration1"></div>
+    <div class="blueball decoration1"></div>
+</div>      
+</body>
+</html>
+
